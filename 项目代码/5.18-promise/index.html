@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <script>
+        function LoadImg(src) {
+            return new Promise((resolve, reject) => {
+                let img = new Image()
+                img.src = src
+                img.onload = () => {
+                    resolve(img)
+
+                }
+                img.onerror = (err) => {
+                    reject(err)
+                }
+            })
+        }
+
+        let arr = ["https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.keaidian.com%2Fuploads%2Fallimg%2F191206%2F640-a662d.jpg&refer=http%3A%2F%2Fwww.keaidian.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1624001644&t=8468df5fde2dceb14fb5c15c62dd6c08", "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fup.enterdesk.com%2Fedpic%2Fd7%2Ff5%2F62%2Fd7f562382589cde5684bef4e605e8e2f.jpg&refer=http%3A%2F%2Fup.enterdesk.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1624001644&t=f9e7fdac652aedc9b22d201ca57356ae", "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fup.enterdesk.com%2Fedpic%2Fd7%2Ff5%2F62%2Fd7f562382589cde5684bef4e605e8e2f.jpg&refer=http%3A%2F%2Fup.enterdesk.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1624001644&t=f9e7fdac652aedc9b22d201ca57356ae", "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.17qq.com%2Fimg_qqtouxiang%2F88660734.jpeg&refer=http%3A%2F%2Fwww.17qq.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1624001644&t=77d203964838ecc9e376aff2426d0c1c", "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.17qq.com%2Fimg_qqtouxiang%2F88645085.jpeg&refer=http%3A%2F%2Fwww.17qq.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1624001644&t=c90b39fbbfe29761573e5fd74f7b259c", "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.17qq.com%2Fimg_qqtouxiang%2F86863805.jpeg&refer=http%3A%2F%2Fwww.17qq.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1624001644&t=653bbb82a86e2555359e5c629918e438", "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.17qq.com%2Fimg_qqtouxiang%2F89370097.jpeg&refer=http%3A%2F%2Fwww.17qq.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1624001644&t=3d010db9a0b7bf81b962b8d2184500f7",
+            "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.17qq.com%2Fimg_qqtouxiang%2F89870541.jpeg&refer=http%3A%2F%2Fwww.17qq.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1624001644&t=bff8ab4ab384fd1c16e300e417872619",
+            "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.17qq.com%2Fimg_qqtouxiang%2F89512757.jpeg&refer=http%3A%2F%2Fwww.17qq.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1624001644&t=6f0b839ec4d751252a81c92bbe8cc551",
+            "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Ftupian.qqw21.com%2Farticle%2FUploadPic%2F2020-1%2F202011420122619097.jpg&refer=http%3A%2F%2Ftupian.qqw21.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1624001644&t=56cbff16cbacb55fb4d468a770cac286"]
+
+        // 依次加载 谁先加载完谁就执行
+        arr.forEach(item => {
+            LoadImg(item).then(ok => {
+                document.body.appendChild(ok)
+            })
+        })
+        // 所有加载完
+        // let imgPromise = arr.map(item => LoadImg(item))
+        // Promise.all(imgPromise).then(ok => {
+        //     ok.forEach(item => document.body.appendChild(item))
+        // })
+
+    </script>
+</body>
+
+
+</html>
+
+
