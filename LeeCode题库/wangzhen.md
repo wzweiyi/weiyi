@@ -1,17 +1,13 @@
-- 5.18
-   - [两数之和](https://leetcode-cn.com/problems/two-sum/)
-  -----
-- 5.19
-   - [移除元素](https://leetcode-cn.com/problems/remove-element/)
-   - [实现 strStr() 函数](https://leetcode-cn.com/problems/implement-strstr/)
+- 5.23
+   - [ x 的平方根](https://leetcode-cn.com/problems/sqrtx/)
+   - [  全排列](https://leetcode-cn.com/problems/permutations/submissions/)
+  
     -----
-- 5.20
-   - [在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
-   - [回文数](https://leetcode-cn.com/problems/palindrome-number/)
-       - 回文数 是指正序（从左向右）和倒序（从右向左）读都是一样的整数。例如，121 是回文，而 123 不是。
-       - let y=x.toString().splite("").reverse().join("")
-       - 对比x和y 是否一致，判断是不是回文数
+- 5.22
+   - [ 有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)
+   - [猜数字](https://leetcode-cn.com/problems/guess-numbers/)
     -----
+    
 - 5.21
    - [ 最大子序和](https://leetcode-cn.com/problems/maximum-subarray/)
        - 思路：
@@ -21,8 +17,21 @@
    - [最后一个单词的长度](https://leetcode-cn.com/problems/length-of-last-word/)
        - 首先给字符串去空格（trim）
     -----
-    
+- 5.20
+   - [在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+   - [回文数](https://leetcode-cn.com/problems/palindrome-number/)
+       - 回文数 是指正序（从左向右）和倒序（从右向左）读都是一样的整数。例如，121 是回文，而 123 不是。
+       - let y=x.toString().splite("").reverse().join("")
+       - 对比x和y 是否一致，判断是不是回文数
+    -----
+- 5.19
+   - [移除元素](https://leetcode-cn.com/problems/remove-element/)
+   - [实现 strStr() 函数](https://leetcode-cn.com/problems/implement-strstr/)
+    -----
   
+- 5.18
+   - [两数之和](https://leetcode-cn.com/problems/two-sum/)
+  -----
 
 
 

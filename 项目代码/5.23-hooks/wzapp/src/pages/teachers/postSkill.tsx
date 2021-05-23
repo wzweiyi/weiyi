@@ -112,7 +112,7 @@ const postSkill: React.FC = () => {
                         {
                             [{ id: "", name: "全部" }, ...majorList].map(item => {
                                 return <span key={item.id}
-                                    className={item.id === majorId ? classnames(styles.active, styles.statusItem) : styles.statusItem}
+                                    className={item.id === majorId ? classnames(styles.show, styles.statusItem) : styles.statusItem}
                                     onClick={() => setMajorId(item.id)}>{item.name}</span>
                             })
                         }
@@ -126,7 +126,7 @@ const postSkill: React.FC = () => {
                     <div>
                         {
                             statusList.map((item, index) => {
-                                return <span key={index} className={index === status ? classnames(styles.active, styles.statusItem) : styles.statusItem} onClick={() => setStatus(index)}>{item}</span>
+                                return <span key={index} className={index === status ? classnames(styles.show, styles.statusItem) : styles.statusItem} onClick={() => setStatus(index)}>{item}</span>
                             })
                         }
                     </div>

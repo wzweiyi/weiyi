@@ -1,7 +1,37 @@
 # 王珍
+
+
+- 5.23日报
+    - leeCode题库
+       - [ x 的平方根](https://leetcode-cn.com/problems/sqrtx/)
+       - [  全排列](https://leetcode-cn.com/problems/permutations/submissions/)
+    - 文章阅读
+       -  [「前端性能」避免回流和重绘的必要性](https://juejin.cn/post/6953029989306466317)
+    - 源码阅读
+       - [_.dropWhile](https://www.lodashjs.com/docs/lodash.dropWhile)
+       - [_.fill](https://www.lodashjs.com/docs/lodash.fill)
+    - 项目进度
+       - css moudle的应用
+  
+   -----
+
+- 5.22日报
+    - leeCode题库
+       - [ 有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)
+       - [猜数字](https://leetcode-cn.com/problems/guess-numbers/)
+    - 文章阅读
+       -  [如何组织管理css样式](https://www.jianshu.com/p/618e1396383e)
+       - [一文彻底搞懂 DvaJS 原理](https://juejin.cn/post/6963466553601835044)
+    - 源码阅读
+       - [_.dropRight](https://www.lodashjs.com/docs/lodash.dropRight)
+       - [_.dropRightWhile](https://www.lodashjs.com/docs/lodash.dropRightWhile)
+    - 项目进度
+       - layout约定式路由时的全局布局文件。
+       - 八维实训平台头部和尾部的编写
+   -----
+
 - 5.21日报
     - leeCode题库
-    - 
        -  [ 最大子序和](https://leetcode-cn.com/problems/maximum-subarray/)
        - [最后一个单词的长度](https://leetcode-cn.com/problems/length-of-last-word/)
     - 文章阅读
@@ -10,6 +40,7 @@
     - 源码阅读
        - [_.differenceWith](https://www.lodashjs.com/docs/lodash.differenceWith)
        - [_.drop](https://www.lodashjs.com/docs/lodash.drop)
+   
     
    -----
 - 5.20日报

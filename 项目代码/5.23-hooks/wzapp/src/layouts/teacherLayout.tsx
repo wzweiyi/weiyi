@@ -22,6 +22,7 @@ const practical = <Menu >
     </Menu.Item>
 </Menu>
 
+
 const interview = <Menu >
     <Menu.Item>
         <NavLink to="/teachers/interviewList">面试记录</NavLink>
@@ -34,7 +35,9 @@ const interview = <Menu >
     </Menu.Item>
 </Menu>
 
-const question = <Menu >
+
+
+const question = <Menu>
     <Menu.Item>
         <NavLink to="/teachers/questionDetail">问答列表</NavLink>
     </Menu.Item>
@@ -43,12 +46,15 @@ const question = <Menu >
     </Menu.Item>
 </Menu>
 
+
+
+
 const TeacherLayout: React.FC = (props) => {
     return <>
         <Header>
             <div className="left">
                 <img className="logo" src="http://111.203.59.61:8060/static/img/w_bw.172a76e5.png" alt="" />
-                <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
+                <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
                     <Menu.Item key="1">
                         <NavLink to="/teachers/postSkill"> 岗位</NavLink>
                     </Menu.Item>
@@ -57,12 +63,11 @@ const TeacherLayout: React.FC = (props) => {
                         <Dropdown overlay={practical}><span>实训<DownOutlined /></span></Dropdown>
                     </Menu.Item>
                     <Menu.Item key="4">
-                        <Dropdown overlay={interview}><span>面试<DownOutlined /></span></Dropdown>
+                        <Dropdown overlay={interview} ><span>面试<DownOutlined /></span></Dropdown>
                     </Menu.Item>
                     <Menu.Item key="5">
-                        <Dropdown overlay={question}><span>回答<DownOutlined /></span></Dropdown>
+                        <Dropdown overlay={question}><span>问答<DownOutlined /></span></Dropdown>
                     </Menu.Item>
-
                 </Menu>
 
             </div>
