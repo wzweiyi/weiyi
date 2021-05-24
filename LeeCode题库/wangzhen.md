@@ -1,3 +1,12 @@
+- 5.24
+   - [寻找两个正序数组的中位数](https://leetcode-cn.com/problems/median-of-two-sorted-arrays/)
+      - 归并法，将两个数组合并，排序，判断合并后数组的长度，判断数组的长度是偶数还是奇数，
+        是偶数，将中间两项相加除以2
+        是奇数，返回中间一项
+   - [搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/)
+      - 判断目标在数组中的位置
+  
+    -----
 - 5.23
    - [ x 的平方根](https://leetcode-cn.com/problems/sqrtx/)
    - [  全排列](https://leetcode-cn.com/problems/permutations/submissions/)

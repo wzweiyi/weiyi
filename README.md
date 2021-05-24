@@ -1,6 +1,6 @@
 # 王珍
 
-
+时候上帝会发生任何
 - 5.23日报
     - leeCode题库
        - [ x 的平方根](https://leetcode-cn.com/problems/sqrtx/)
